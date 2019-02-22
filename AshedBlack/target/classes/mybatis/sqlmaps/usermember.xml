@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<insert id="UserMemberInsert">
+		INSERT INTO USER_MEMBER
+		(
+			USERID AS userid,
+			PASSWORD AS password,
+			NAME AS name,
+			ZIPCODE AS zipcode,
+			ADDRESS1 AS address1,
+			ADDRESS2 AS address2,
+			TEL1 AS
+			tel1,
+			TEL2 AS tel2,
+			TEL3 AS tel3,
+			EMAIL AS email,
+			GENDER AS gender,
+			HOBBY
+			AS hobby,
+			TERMS1 AS terms1,
+			TERMS2 AS terms2,
+			TERMS3 AS terms3,
+			YEAR AS
+			year,
+			MONTH AS month,
+			DAY AS day,
+		)
+		VALUES
+		(
+			#{userid},
+			#{password},
+			#{name},
+			#{zipcode},
+			#{address1},
+			#{address2},
+			#{tel1},
+			#{tel2},
+			#{tel3},
+			#{email},
+			#{gender},
+			#{hobby},
+			#{terms1},
+			#{terms2},
+			#{terms3},
+			#{year},
+			#{month},
+			#{day}
+		)
+	</insert>
+
+</mapper> 
